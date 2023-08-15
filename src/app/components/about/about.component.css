@@ -1,0 +1,6 @@
+.about-container {
+    width: 100%;
+    height: 120vh;
+    background: var(--px-dark);
+    background: linear-gradient(0deg, var(--px-bg) 0%, var(--px-dark) 100%);
+}

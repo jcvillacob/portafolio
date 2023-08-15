@@ -3,4 +3,13 @@
     top: 0;
     left: 285px;
     width: calc(100% - 285px);
+    transition: ease all .35s;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        left: 0;
+        width: 100%;
+    }
+    
 }

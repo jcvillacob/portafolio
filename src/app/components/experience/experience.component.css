@@ -1,0 +1,131 @@
+.experience-container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    background: var(--px-theme-2);
+    background: linear-gradient(270deg, var(--px-theme-2) 0%, var(--px-theme) 100%);    
+
+}
+
+
+/* Primera columna */
+.experience-container__general {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 48px;
+    padding: 0 12px;
+}
+
+.general__subtitle h6 {
+    font-size: 18px;
+    color: var(--px-text);
+    font-style: italic;
+}
+
+.general__title h2 {
+    font-size: 48px;
+    color: var(--px-text);
+}
+
+.general__paragraph p {
+    font-size: 18px;
+    color: var(--px-text);
+}
+
+.button__download {
+    padding: 15px 35px;
+    color: var(--px-text);
+    background-color: var(--px-dark);
+    border: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button__download:hover {
+    cursor: pointer;
+    background-color: var(--px-bg);
+}
+
+
+
+/* Segunda Columna */
+.experience-container__list {
+    width: 60%;
+    margin-top: 48px;
+    padding: 0 12px 0 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list__data, .list__data2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--px-text);
+    padding: 0 15px;
+    font-size: 16px;
+    padding-bottom: 12px;
+}
+
+.list__data2 {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--px-text);
+}
+
+.list__exper {
+    width: 100%;
+}
+
+.exper__exp {
+    font-size: 32px;
+    color: var(--px-text);
+}
+
+
+/* Media */
+@media screen and (max-width: 850px) {
+    .experience-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-container__general, .experience-container__list {
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .general__title h2 {
+        font-size: 35px;
+    }
+
+    .general__subtitle h6 {
+        font-size: 16px;
+    }
+
+    .list__data, .list__data2 {
+        font-size: 14px;
+    }
+    
+    .exper__exp {
+        font-size: 22px;
+    }
+
+    .experience-container__list {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-container__general, .experience-container__list {
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-<div class="sidebar-container">
+<div class="sidebar-container" [ngClass]="{'menu-activated': menuActivate}">
     <!-- Logo -->
     <div class="sidebar-container__logo">
         <a href="" class="logo__link">
@@ -63,4 +63,8 @@
             </a>
         </li>
     </ul>
+</div>
+
+<div class="sidebar-bars" (click)="activarMenu()">
+    <i class="fa-solid fa-bars-staggered"></i>
 </div>
