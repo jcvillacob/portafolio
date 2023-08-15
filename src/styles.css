@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --px-theme: #AF2676;
+    --px-theme-2: #441B45;
+    --px-white: #fff;
+    --px-white-rgb: 255,255,255;
+    --px-text: #FFFFFF;
+    --px-heading: #FFFFFF;
+    --px-bg: #100E24;
+    --px-dark: #0D0B1C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--px-white);
+}
