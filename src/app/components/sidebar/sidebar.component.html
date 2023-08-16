@@ -8,35 +8,10 @@
 
     <!-- Menu -->
     <ul class="side-container__main">
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                HOME
-            </a>
-        </li>
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                ABOUT
-            </a>
-        </li>
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                SERVICES
-            </a>
-        </li>
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                PORTFOLIO
-            </a>
-        </li>
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                BLOG
-            </a>
-        </li>
-        <li class="main__elemento">
-            <a href="" class="elemento__link">
-                CONTACT
-            </a>
+        <li class="main__elemento" *ngFor="let item of items">
+            <div class="elemento__link" (click)="scrollToSection(item.id)">
+                {{ item.name }}
+            </div>
         </li>
     </ul>
 

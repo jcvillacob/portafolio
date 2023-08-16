@@ -69,6 +69,10 @@
     color: var(--px-text);
 }
 
+.elemento__link:hover {
+    cursor: pointer;
+}
+
 
 /* REDES SOCIALES */
 .side-container__redes {
