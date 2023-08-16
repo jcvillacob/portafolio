@@ -1,1 +1,36 @@
-<p>skills works!</p>
+<div class="skills-container">
+    <!-- Subtitulo -->
+    <div class="skills-container__subtitle">
+        <h6>My Service</h6>
+    </div>
+
+    <!-- Titulo -->
+    <div class="skills-container__title">
+        <h2>MY SPECIALTIES</h2>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills-container__skills">
+        <div class="skills__skill" *ngFor="let exp of experiences; index as i">
+            <div class="skill__header" (click)="showExp(i)">
+                <div class="header__title" [ngClass]="{'-showed': exp.showed}"><span> {{ exp.name }} </span></div>
+                <div class="header__icon" [ngClass]="{'-showed': exp.showed}"><i class="fa-solid fa-arrow-down"></i></div>
+            </div>
+            <div class="skill__body" [ngClass]="{'-showed': exp.showed}">
+                <div class="body__image">
+                    <img [src]="exp.img" alt="" class="image__img">
+                </div>
+                <div class="body__body2">
+                    <div class="body2__title">
+                        <h3>{{ exp.name }}</h3>
+                    </div>
+                    <div class="body2__text">
+                        <p>{{ exp.text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

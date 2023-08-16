@@ -1,0 +1,136 @@
+.skills-container {
+    width: 100%;
+    padding: 100px 12px;
+    background: var(--px-bg);
+    background: linear-gradient(0deg, var(--px-dark) 0%, var(--px-bg) 100%);
+    color: var(--px-text);
+}
+
+.skills-container__subtitle h6 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.skills-container__title h2 {
+    font-size: 48px;
+}
+
+.skills-container__skills {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+.skills__skill {
+    width: 100%;
+}
+
+.skill__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px;
+    border-bottom: 1px solid var(--px-text);
+}
+
+.skill__header:hover {
+    cursor: pointer;
+}
+
+.header__title span,
+.header__icon {
+    font-size: 32px;
+    transition: all 0.4s ease;
+}
+
+.header__title.-showed span {
+    background-image: linear-gradient(270deg, var(--px-theme) 80%, var(--px-theme-2) 100%);
+    /* Aquí puedes personalizar tu degradado */
+    color: transparent;
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+    background-clip: text;
+    /* Aplica el fondo solo al texto */
+    -webkit-background-clip: text;
+    /* Versión para navegadores basados en WebKit como Safari */
+}
+
+.header__icon.-showed {
+    transform: rotate(180deg);
+}
+
+.skill__body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px 0;
+    margin-top: 40px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.45s ease;
+}
+
+.skill__body.-showed {
+    max-height: 500px;
+    overflow-y: visible;
+}
+
+.body__image {
+    min-width: 30%;
+}
+
+.image__img {
+    width: 100%;
+}
+
+.body__body2 {
+    min-width: 65%;
+    padding: 10px 8px 15px 15px;
+}
+
+.body2__title h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.body2__text p {
+    font-size: 16px;
+    color: #adb5bd;
+}
+
+
+/* Media */
+@media screen and (max-width: 700px) {
+    .skill__body {
+        flex-direction: column;
+    }
+
+    .skill__body.-showed {
+        max-height: 1000px;
+        overflow-y: visible;
+    }
+
+    .header__title span,
+    .header__icon {
+        font-size: 22px;
+    }
+
+    .body__body2 {
+        padding: 8px 0 0;
+    }
+
+    .skills-container__subtitle h6 {
+        font-size: 16px;
+    }
+    
+    .skills-container__title h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {}
