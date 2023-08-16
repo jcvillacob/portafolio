@@ -1,6 +1,279 @@
 .about-container {
     width: 100%;
-    height: 120vh;
-    background: var(--px-dark);
-    background: linear-gradient(0deg, var(--px-bg) 0%, var(--px-dark) 100%);
+    padding: 100px 12px;
+    background: var(--px-bg);
+    background: linear-gradient(0deg, var(--px-dark) 0%, var(--px-bg) 100%);
+    color: var(--px-text);
+}
+
+.about-container__subtitle h6 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.about-container__title h2 {
+    font-size: 48px;
+}
+
+/* Informacion */
+.about-container__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info__phography {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.photography__avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar__img {
+    width: 90%;
+}
+
+.photography__name h3 {
+    font-size: 40px;
+    background-image: linear-gradient(270deg, var(--px-theme) 80%, var(--px-theme-2) 100%);
+    /* Aquí puedes personalizar tu degradado */
+    color: transparent;
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+    background-clip: text;
+    /* Aplica el fondo solo al texto */
+    -webkit-background-clip: text;
+    /* Versión para navegadores basados en WebKit como Safari */
+}
+
+.photography__location p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.photography__location p span {
+    font-weight: 300;
+}
+
+.photography__button {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.button__btn {
+    padding: 15px 35px;
+    font-size: 16px;
+    margin: auto;
+    color: var(--px-text);
+    background: linear-gradient(90deg,var(--px-theme) 0%,var(--px-theme-2) 100%),var(--px-white);
+    border: 0;
+    transition: all 0.3s;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__btn:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg,var(--px-theme) 80%,var(--px-theme-2) 100%),var(--px-white);
+}
+
+
+/* Informacion */
+.info__text {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.text__personal {
+    width: 100%;
+    font-size: 16px;
+}
+
+.text__contacto {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacto__elemento {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Datos */
+.text__datos {
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 1px solid var(--px-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos__dato {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px 8px;
+}
+
+.dato__dato {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dato__dato h6 {
+    font-size: 48px;
+    background-image: linear-gradient(270deg, var(--px-theme) 40%, var(--px-theme-2) 100%);
+    /* Aquí puedes personalizar tu degradado */
+    color: transparent;
+    /* Hace que el color del texto sea transparente para que el fondo sea visible */
+    background-clip: text;
+    /* Aplica el fondo solo al texto */
+    -webkit-background-clip: text;
+    /* Versión para navegadores basados en WebKit como Safari */
+}
+
+.dato__dato span {
+    font-size: 18px;
+}
+
+.datos__dato p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Mensaje */
+.text__message {
+    width: 100%;
+    margin-top: 15px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.034);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.message__quotes {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+
+}
+
+.message__mensaje {
+    width: 70%;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* Media */
+@media screen and (max-width: 850px) {
+    .about-container__info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info__text {
+        width: 90%;
+    }
+
+    .info__text {
+        margin-top: 40px;
+    }
+
+    .info__phography {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .info__phography {
+        width: 80%;
+    }
+
+    .photography__name h3, .about-container__title h2 {
+        font-size: 35px;
+    }
+
+    .photography__location p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text__datos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .datos__dato {
+        width: 100%;
+    }
+
+    .dato__dato {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .info__text {
+        padding: 0;
+    }
+
+    .text__message {
+        padding: 10px;
+    }
+
+    .message__quotes {
+        width: 20%;
+        font-size: 35px;
+    }
+
+    .message__mensaje {
+        width: 80%;
+    }
+
+    .contacto__elemento {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .info__text, .info__phography {
+        width: 95%;
+    }
+    
 }

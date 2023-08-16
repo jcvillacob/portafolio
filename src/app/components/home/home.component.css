@@ -58,7 +58,7 @@
 
 .button__with-me {
     color: var(--px-text);
-    background-color: var(--px-theme);
+    background: linear-gradient(90deg,var(--px-theme) 0%,var(--px-theme-2) 100%),var(--px-white);
     padding: 15px 45px;
     font-size: 16px;
     border: 0px;
@@ -66,7 +66,7 @@
 
 .button__with-me:hover {
     cursor: pointer;
-    background-color: var(--px-theme-2);
+    background: linear-gradient(90deg,var(--px-theme) 80%,var(--px-theme-2) 100%),var(--px-white);
 }
 
 .text__info-bar {

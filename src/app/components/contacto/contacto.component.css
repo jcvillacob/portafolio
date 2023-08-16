@@ -138,6 +138,11 @@ input, textarea {
     border: 0;
 }
 
+.form__submit:hover {
+    cursor: pointer;
+    background-color: var(--px-bg);
+}
+
 
 /* Media */
 @media screen and (max-width: 850px) {
@@ -167,8 +172,14 @@ input, textarea {
     .form__form{
         width: 100%;
     }
-}
 
-@media screen and (max-width: 480px) {
+    .datos__title h2 {
+        font-size: 35px;
+    }
+
+    .form__initial-text h4 {
+        font-size: 32px;
+    }
+
     
 }
