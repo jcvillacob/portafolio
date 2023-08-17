@@ -1,1 +1,58 @@
-<p>portfolio works!</p>
+<div class="portfolio-container">
+    <!-- Subtitulo -->
+    <div class="portfolio-container__subtitle">
+        <h6>My Work</h6>
+    </div>
+
+    <!-- Titulo -->
+    <div class="portfolio-container__title">
+        <h2>RECENT PROJECT</h2>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="portfolio-container__projects">
+        <!-- Proyecto -->
+        <div class="projects__project" *ngFor="let project of projects, index as i">
+            <div class="project__image">
+                <img [src]="project.img" alt="" class="image__proj">
+            </div>
+
+            <div class="project__info">
+                <div class="info__category">
+                    <h6>{{ project.category }}</h6>
+                </div>
+                <div class="info__name">
+                    <h4>{{ project.name }}</h4>
+                </div>
+                <div class="info__icon" (click)="showDetails(i, 1)">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <!-- Detalles -->
+            <div class="project__details" [ngClass]="{'-showed': project.showed}">
+                <div class="details__container">
+                    <div class="details__close"  (click)="showDetails(i, 0)">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="details__image">
+                        <img [src]="project.img" alt=""
+                            class="image__det">
+                    </div>
+                    <div class="details__name">
+                        <h6>{{ project.category }}</h6>
+                        <h2>{{ project.name }}</h2>
+                    </div>
+                    <div class="details__paragraphs">
+                        <p *ngFor="let p of project.p">
+                            {{ p }}
+                        </p>
+                    </div>
+                    <div class="details__redes">
+                        <i class="fa-brands fa-github github"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
