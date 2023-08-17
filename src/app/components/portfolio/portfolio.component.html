@@ -13,7 +13,7 @@
     <div class="portfolio-container__projects">
         <!-- Proyecto -->
         <div class="projects__project" *ngFor="let project of projects, index as i">
-            <div class="project__image">
+            <div class="project__image" (click)="showDetails(i, 1)">
                 <img [src]="project.img" alt="" class="image__proj">
             </div>
 

@@ -39,13 +39,13 @@
     height: 25px;
     text-decoration: none;
     white-space: nowrap;
+    color: var(--px-text);
 }
 
 .link__image {
     height: 25px;
     width: auto;
 }
-
 
 
 /* MENU */
@@ -72,6 +72,7 @@
 .elemento__link:hover {
     cursor: pointer;
 }
+
 
 
 /* REDES SOCIALES */
@@ -113,6 +114,50 @@
     color: var(--px-text);
 }
 
+
+/* TEMAS */
+.side-container__themes {
+    width: 100%;
+    margin-top: 85px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.side-container__themes h6 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--px-text);
+}
+
+.themes__theme {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(90deg,var(--px-theme) 0%,var(--px-theme-2) 100%),var(--px-white);
+    border-radius: 50%;
+}
+
+.professional {
+    background: linear-gradient(90deg,#1E88E5 0%,#1976D2 100%),var(--px-white);
+}
+
+.warm {
+    background: linear-gradient(90deg,#FFA726 0%,#D84315 100%),var(--px-white);
+}
+
+.fresh {
+    background: linear-gradient(90deg,#56CCF2 0%,#2F80ED 100%),var(--px-white);
+}
+
+.dark {
+    background: linear-gradient(90deg,#FF5733 0%,#C70039 100%),var(--px-white);
+}
+
+.themes__theme:hover {
+    cursor: pointer;
+}
 
 /* MEDIA */
 @media screen and (max-width: 1200px) {

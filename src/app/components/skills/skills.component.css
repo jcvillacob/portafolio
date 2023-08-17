@@ -100,7 +100,7 @@
 
 .body2__text p {
     font-size: 16px;
-    color: #adb5bd;
+    color: var(--px-subtext);
 }
 
 

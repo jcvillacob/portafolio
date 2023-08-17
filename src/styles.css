@@ -3,14 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --px-theme: #AF2676;
-    --px-theme-2: #441B45;
-    --px-white: #fff;
-    --px-white-rgb: rgb(255,255,255);
-    --px-text: #FFFFFF;
-    --px-heading: #FFFFFF;
-    --px-bg: #100E24;
-    --px-dark: #0D0B1C;
+}
+
+:root {  
+    --px-theme: #1E88E5;
+    --px-theme-2: #1976D2;
+    --px-white: #f4f6f8;
+    --px-white-rgb: 244,246,248;
+    --px-text: #2C3E50;
+    --px-heading: #1A252C;
+    --px-bg: #ECEFF1;
+    --px-dark: #B0BEC5;
     font-family: 'Open Sans', sans-serif;
 }
 
