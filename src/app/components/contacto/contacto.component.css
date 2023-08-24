@@ -78,7 +78,7 @@ ul, li {
 }
 
 .form__initial-text h4 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 15px;
@@ -143,6 +143,11 @@ input, textarea {
     background-color: var(--px-bg);
 }
 
+.text__paragraph a {
+    color: var(--px-text);
+    font-size: 16px;
+    font-weight: 600;
+}
 
 /* Media */
 @media screen and (max-width: 850px) {

@@ -16,8 +16,8 @@
                     <i class="fa-solid fa-comment-dots"></i>
                 </div>
                 <div class="card__text">
-                    <div class="text__title">Chat to Us</div>
-                    <div class="text__paragraph">Our friendly team is there to help. info@domainname.com</div>
+                    <div class="text__title">Chat to Me</div>
+                    <div class="text__paragraph">You can contact me at jucaviza6@gmail.com</div>
                 </div>
             </li>
 
@@ -27,8 +27,8 @@
                     <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div class="card__text">
-                    <div class="text__title">Call us</div>
-                    <div class="text__paragraph">Mon-Fri from 8am to 5pm. +01 (555) 000-0000</div>
+                    <div class="text__title">Call me</div>
+                    <div class="text__paragraph">I am here to help you in whatever you need. (+57) 301 5168188</div>
                 </div>
             </li>
 
@@ -38,8 +38,10 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </div>
                 <div class="card__text">
-                    <div class="text__title">Chat to Us</div>
-                    <div class="text__paragraph">Our friendly team is there to help. info@domainname.com</div>
+                    <div class="text__title">LinkedIn</div>
+                    <div class="text__paragraph">Puedes ver mi perfil de LinkedIn. <a
+                            href="https://www.linkedin.com/in/juancamilovillacob" target="_blank">Juan Villacob</a>
+                    </div>
                 </div>
             </li>
         </div>
@@ -49,37 +51,38 @@
     <!-- Formulario -->
     <div class="contacto-container__form">
         <div class="form__initial-text">
-            <h4>Got Ideas? We've got the skills. Let's team up.</h4>
+            <h4>Do you have any doubt? You can contact me at any time.</h4>
         </div>
 
-        <div class="form__secondary-text">
+        <!-- <div class="form__secondary-text">
             <p>Tell us more about yourself and what you're got in mind.</p>
-        </div>
+        </div> -->
 
-        <form class="form__form">
+        <form class="form__form" (submit)="sendMessage($event)">
             <div class="form__group1">
-                <label for="" class="group1__label">FIRST NAME</label>
-                <input type="text" class="group1__input">
+                <label for="firstName" class="group1__label">FIRST NAME</label>
+                <input type="text" class="group1__input" name="firstName" [(ngModel)]="firstName">
             </div>
 
             <div class="form__group1">
-                <label for="" class="group1__label">EMAIL</label>
-                <input type="email" class="group1__input">
+                <label for="email" class="group1__label">EMAIL</label>
+                <input type="email" class="group1__input" name="email" [(ngModel)]="email">
+            </div>
+            
+
+            <div class="form__group2">
+                <label for="subject" class="group2__label">SUBJET</label>
+                <input type="text" class="group2__input" name="subject" [(ngModel)]="subject">
             </div>
 
             <div class="form__group2">
-                <label for="" class="group2__label">SUBJET</label>
-                <input type="text" class="group2__input">
+                <label for="message" class="group2__label">YOUR MESSAGE</label>
+                <textarea name="" id="message" cols="30" rows="10" name="message" class="group2__input" [(ngModel)]="message"></textarea>
             </div>
 
-            <div class="form__group2">
-                <label for="" class="group2__label">YOUR MESSAGE</label>
-                <textarea name="" id="" cols="30" rows="10" class="group2__input"></textarea>
-            </div>
-
-            <button class="form__submit">Send Message</button>
-
+            <button type="submit" class="form__submit">Send Message</button>
         </form>
+
 
     </div>
 </div>
