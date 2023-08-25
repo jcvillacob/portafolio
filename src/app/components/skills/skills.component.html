@@ -24,8 +24,9 @@
                     <div class="body2__title">
                         <h3>{{ exp.name }}</h3>
                     </div>
-                    <div class="body2__text">
-                        <p>{{ exp.text }}</p>
+                    <div class="body2__text" *ngFor="let desc of exp.text">
+                        <h4></h4>
+                        <p> <span>{{ desc.name }}:</span> {{ desc.description }}</p>
                     </div>
                 </div>
             </div>
