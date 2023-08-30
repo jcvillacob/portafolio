@@ -40,6 +40,7 @@
 
 .avatar__img {
     width: 90%;
+    border-radius: 50%;
 }
 
 .photography__name h3 {

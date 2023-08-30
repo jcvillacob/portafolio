@@ -125,8 +125,16 @@
     display: none;
 }
 
-.image__det {
+.details__image {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.image__det {
+    width: 70%;
 }
 
 .details__name {
@@ -263,6 +271,9 @@
     .github {
         margin-bottom: 25px;
     }
+    .image__det {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -274,5 +285,17 @@
     .project__image, .project__info {
         width: 90%;
         padding: 8px;
+    }
+
+    .details__close {
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .image__det {
+        width: 90%;
     }
 }

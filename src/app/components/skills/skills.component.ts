@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   experiences: any[] = [
-    { name: 'Web Development', showed: false, img: 'https://th.bing.com/th/id/OIG.wGMwfHYNqOKz.L9NXL38?pid=ImgGn', 
+    { name: 'Web Development', showed: false, img: 'assets/skills/laptop.jpg', 
         text: [
           {name: 'Front-End Development', description: 'Experience in HTML, CSS, JS, and Angular, with a passion for design and usability.'},
           {name: 'Full-Stack Development', description: 'Experience in Full-Stack projects using NodeJS, MongoDB, and MySQL.'},
@@ -16,7 +16,7 @@ export class SkillsComponent {
           {name: 'Business Intelligence Tools', description: 'Proficiency in Excel and PowerBi for data visualization and analysis.'}
         ]
     },
-    { name: 'Complementary Skills', showed: false, img: 'https://th.bing.com/th/id/OIG.nrUQY0RGmrcoDwQQxk5W?pid=ImgGn', 
+    { name: 'Complementary Skills', showed: false, img: 'assets/skills/posticks.jpg', 
         text: [
           {name: 'SCRUM Methodology', description: 'Application of the SCRUM methodology in project development, focusing on collaboration and continuous delivery.'},
           {name: 'Working in Multidisciplinary Teams', description: 'Experience in the innovation area, working with diverse teams, and adapting to different roles and responsibilities.'},
@@ -24,7 +24,7 @@ export class SkillsComponent {
           {name: 'Continuous Learning', description: 'Commitment to professional growth through courses and self-learning.'}
         ]
     },
-    { name: 'Soft Skills', showed: false, img: 'https://th.bing.com/th/id/OIG.dQLikSoSM6eyNOeWkp9h?pid=ImgGn', 
+    { name: 'Soft Skills', showed: false, img: 'assets/skills/problemSolving.jpg', 
         text: [
           {name: 'Effective Communication', description: 'Ability to communicate ideas and collaborate effectively with multidisciplinary teams.'},
           {name: 'Adaptability', description: 'Flexibility to adapt to different environments and challenges, especially in the area of innovation.'},

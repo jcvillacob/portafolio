@@ -30,7 +30,7 @@
             </div>
 
             <!-- Detalles -->
-            <div class="project__details" [ngClass]="{'-showed': project.showed}">
+            <div class="project__details" [ngClass]="{'-showed': project.showed}" (click)="showDetails(i, 0)">
                 <div class="details__container">
                     <div class="details__close"  (click)="showDetails(i, 0)">
                         <i class="fa-solid fa-xmark"></i>
