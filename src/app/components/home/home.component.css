@@ -91,11 +91,12 @@
 /* IMAGEN */
 .home-container__img {
     position: absolute;
-    background-image: url(../../../assets/banners/home-banner.png);
+    background-image: url(../../../assets/banners/cruzado.png);
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
     width: 500px;
     right: 50px;
+    top: 5vh;
     z-index: 0;
 }
 
