@@ -13,8 +13,8 @@
     <div class="portfolio-container__projects">
         <!-- Proyecto -->
         <div class="projects__project" *ngFor="let project of projects, index as i">
-            <div class="project__image" (click)="showDetails(i, 1)">
-                <img [src]="project.img" alt="" class="image__proj">
+            <div class="project__image">
+                <img [src]="project.imgs[0]" alt="" class="image__proj"  (click)="showDetails($event, i, 1)">
             </div>
 
             <div class="project__info">
@@ -24,20 +24,19 @@
                 <div class="info__name">
                     <h4>{{ project.name }}</h4>
                 </div>
-                <div class="info__icon" (click)="showDetails(i, 1)">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <div class="info__icon">
+                    <i class="fa-solid fa-arrow-up-right-from-square"  (click)="showDetails($event, i, 1)"></i>
                 </div>
             </div>
 
             <!-- Detalles -->
-            <div class="project__details" [ngClass]="{'-showed': project.showed}" (click)="showDetails(i, 0)">
+            <div class="project__details" [ngClass]="{'-showed': project.showed}" (click)="showDetails($event, i, 0)">
                 <div class="details__container">
-                    <div class="details__close"  (click)="showDetails(i, 0)">
-                        <i class="fa-solid fa-xmark"></i>
+                    <div class="details__close">
+                        <i class="fa-solid fa-xmark" (click)="showDetails($event,i, 0)"></i>
                     </div>
                     <div class="details__image">
-                        <img [src]="project.img" alt=""
-                            class="image__det">
+                        <app-images [images]="project.imgs"></app-images>
                     </div>
                     <div class="details__name">
                         <h6>{{ project.category }}</h6>

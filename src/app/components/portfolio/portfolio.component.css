@@ -37,7 +37,9 @@
 }
 
 .image__proj {
+    max-height: 150px;
     width: 100%;
+    object-fit: contain;
     transition: all 0.35s ease;
     -webkit-transition: all 0.35s ease;
     -moz-transition: all 0.35s ease;
@@ -127,9 +129,7 @@
 
 .details__image {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-height: 80vh;
     margin-bottom: 15px;
 }
 
@@ -213,6 +213,7 @@
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+    z-index: 902;
 }
 
 .details__close:hover {
