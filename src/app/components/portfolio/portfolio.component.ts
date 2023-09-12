@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class PortfolioComponent {
   projects: any[] = [
-    { category: 'UX case study',
-      name: 'Bally Website Research',
+    { category: 'Frontend',
+      name: 'Drivers Applications',
       imgs: [
         'assets/projects/login_conductores.png',
         'assets/projects/2_conductores.png',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
+        'assets/projects/3_conductores.png',
+        'assets/projects/4_conductores.png',
+        'assets/projects/5_conductores.png',
       ],
       p: [
         '1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -24,8 +24,8 @@ export class PortfolioComponent {
       ],
       showed: false
     },
-    { category: 'UX case study',
-      name: 'Bally Website Research',
+    { category: 'Frontend',
+      name: 'Página Web',
       imgs: [
         'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
         'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
@@ -41,14 +41,12 @@ export class PortfolioComponent {
       ],
       showed: false
     },
-    { category: 'UX case study',
-      name: 'Bally Website Research',
+    { category: 'Fullstack',
+      name: 'Costeador de Viajes',
       imgs: [
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
+        'assets/projects/login_costeador.png',
+        'assets/projects/2_costeador.png',
+        'assets/projects/3_costeador.png',
       ],
       p: [
         '1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
@@ -58,14 +56,13 @@ export class PortfolioComponent {
       ],
       showed: false
     },
-    { category: 'UX case study',
-      name: 'Bally Website Research',
+    { category: 'Fullstack',
+      name: 'Repositorio de Videos',
       imgs: [
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
-        'https://www.uiocean.com/angular/lilon/assets/img/services-1.jpg',
+        'assets/projects/1_videos.png',
+        'assets/projects/2_videos.png',
+        'assets/projects/3_videos.png',
+        'assets/projects/4_videos.png',
       ],
       p: [
         '1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
