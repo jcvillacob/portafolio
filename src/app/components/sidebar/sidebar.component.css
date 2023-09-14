@@ -35,15 +35,14 @@
 }
 
 .logo__link {
-    width: 225px;
-    height: 25px;
+    height: 45px;
     text-decoration: none;
     white-space: nowrap;
     color: var(--px-text);
 }
 
 .link__image {
-    height: 25px;
+    height: 60px;
     width: auto;
 }
 

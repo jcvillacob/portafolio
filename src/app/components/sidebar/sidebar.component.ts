@@ -11,6 +11,7 @@ type ThemeName = 'dark' | 'warm' | 'professional' | 'fresh';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  logo = 'assets/jv_navbar.svg';
   menuActivate: boolean = false;
   items: any[] = [
     {name: 'HOME', id: 'home'},
@@ -72,10 +73,14 @@ export class SidebarComponent {
 
   activarMenu(): void {
     this.menuActivate = !this.menuActivate;
-    console.log(this.menuActivate);
   }
 
   changeTheme(themeName: ThemeName) {
     this.themeService.setTheme(this.themes[themeName]);
+    if(themeName === 'dark') {
+      this.logo = 'assets/jv_navbarWhite.svg';
+    } else {
+      this.logo = 'assets/jv_navbar.svg';
+    }
   }  
 }
