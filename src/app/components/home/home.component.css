@@ -91,7 +91,7 @@
 /* IMAGEN */
 .home-container__img {
     position: absolute;
-    background-image: url(../../../assets/banners/cruzado.png);
+    background-image: url(../../../assets/banners/cruzado-min.png);
     background-size: cover;
     height: 95vh;
     width: 500px;
