@@ -13,16 +13,27 @@ type ThemeName = 'dark' | 'warm' | 'professional' | 'fresh';
 })
 export class SidebarComponent {
   language!: number;
+  items!: any[];
   logo = 'assets/jv_navbar.svg';
+  elementos: any[] = [
+    [
+      {name: 'HOME', id: 'home'},
+      {name: 'ABOUT', id: 'about'},
+      {name: 'EXPERIENCE', id: 'experience'},
+      {name: 'SKILLS', id: 'skills'},
+      {name: 'PORTFOLIO', id: 'portfolio'},
+      {name: 'CONTACT', id: 'contact'},
+    ],
+    [
+      {name: 'HOME', id: 'home'},
+      {name: 'SOBRE ME', id: 'about'},
+      {name: 'EXPERIENCIA', id: 'experience'},
+      {name: 'HABILIDADES', id: 'skills'},
+      {name: 'PORTAFOLIO', id: 'portfolio'},
+      {name: 'CONTACTO', id: 'contact'},
+    ]
+  ];
   menuActivate: boolean = false;
-  items: any[] = [
-    {name: 'HOME', id: 'home'},
-    {name: 'ABOUT', id: 'about'},
-    {name: 'EXPERIENCE', id: 'experience'},
-    {name: 'SKILLS', id: 'skills'},
-    {name: 'PORTFOLIO', id: 'portfolio'},
-    {name: 'CONTACT', id: 'contact'},
-  ]
   themes = {
     dark: {
       '--px-theme': '#FF5733',
@@ -69,7 +80,8 @@ export class SidebarComponent {
 
   constructor(private scrollService: ScrollService, private themeService: ThemeService) {
     this.themeService.language$.subscribe(lang => {
-      this.language = lang
+      this.language = lang;
+      this.items = this.elementos[lang];
     });
   }
 
