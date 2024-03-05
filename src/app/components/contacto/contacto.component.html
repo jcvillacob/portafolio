@@ -2,10 +2,10 @@
     <!-- Datos de Contacto -->
     <div class="contacto-container__datos">
         <div class="datos__subtitle">
-            <h5>Contact</h5>
+            <h5>{{ inicio.subtitle }}</h5>
         </div>
         <div class="datos__title">
-            <h2>REACH OUT ME</h2>
+            <h2>{{ inicio.title }}</h2>
         </div>
 
         <!-- Tarjetas -->
@@ -16,8 +16,8 @@
                     <i class="fa-solid fa-comment-dots"></i>
                 </div>
                 <div class="card__text">
-                    <div class="text__title">Chat to Me</div>
-                    <div class="text__paragraph">You can contact me at jucaviza6@gmail.com</div>
+                    <div class="text__title">{{ forma.chat }}</div>
+                    <div class="text__paragraph">{{ forma.chatpara }} jucaviza6@gmail.com</div>
                 </div>
             </li>
 
@@ -27,8 +27,8 @@
                     <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
                 <div class="card__text">
-                    <div class="text__title">Call me</div>
-                    <div class="text__paragraph">I am here to help you in whatever you need. (+57) 301 5168188</div>
+                    <div class="text__title">{{ forma.call }}</div>
+                    <div class="text__paragraph">{{ forma.callpara }} (+57) 301 5168188</div>
                 </div>
             </li>
 
@@ -39,7 +39,7 @@
                 </div>
                 <div class="card__text">
                     <div class="text__title">LinkedIn</div>
-                    <div class="text__paragraph">Puedes ver mi perfil de LinkedIn. <a
+                    <div class="text__paragraph">{{ forma.linkedin }} <a
                             href="https://www.linkedin.com/in/juancamilovillacob" target="_blank">Juan Villacob</a>
                     </div>
                 </div>
@@ -47,42 +47,34 @@
         </div>
     </div>
 
-
     <!-- Formulario -->
     <div class="contacto-container__form">
         <div class="form__initial-text">
-            <h4>Do you have any doubt? You can contact me at any time.</h4>
+            <h4>{{ formulario.text }}</h4>
         </div>
-
-        <!-- <div class="form__secondary-text">
-            <p>Tell us more about yourself and what you're got in mind.</p>
-        </div> -->
 
         <form class="form__form" (submit)="sendMessage($event)">
             <div class="form__group1">
-                <label for="firstName" class="group1__label">FIRST NAME</label>
+                <label for="firstName" class="group1__label">{{ formulario.first }}</label>
                 <input type="text" class="group1__input" name="firstName" [(ngModel)]="firstName">
             </div>
 
             <div class="form__group1">
-                <label for="email" class="group1__label">EMAIL</label>
+                <label for="email" class="group1__label">{{ formulario.email }}</label>
                 <input type="email" class="group1__input" name="email" [(ngModel)]="email">
             </div>
-            
 
             <div class="form__group2">
-                <label for="subject" class="group2__label">SUBJET</label>
+                <label for="subject" class="group2__label">{{ formulario.sub }}</label>
                 <input type="text" class="group2__input" name="subject" [(ngModel)]="subject">
             </div>
 
             <div class="form__group2">
-                <label for="message" class="group2__label">YOUR MESSAGE</label>
+                <label for="message" class="group2__label">{{ formulario.message }}</label>
                 <textarea name="" id="message" cols="30" rows="10" name="message" class="group2__input" [(ngModel)]="message"></textarea>
             </div>
 
-            <button type="submit" class="form__submit">Send Message</button>
+            <button type="submit" class="form__submit">{{ formulario.send }}</button>
         </form>
-
-
     </div>
 </div>

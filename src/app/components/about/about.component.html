@@ -1,12 +1,12 @@
 <div class="about-container">
     <!-- Subtitulo -->
     <div class="about-container__subtitle">
-        <h6>Nice to Meet You!</h6>
+        <h6>{{ inicio.subtitle }}</h6>
     </div>
 
     <!-- Titulo -->
     <div class="about-container__title">
-        <h2>ABOUT ME...</h2>
+        <h2>{{ inicio.title }}</h2>
     </div>
 
     <!-- Informacion -->
@@ -22,11 +22,11 @@
             </div>
 
             <div class="photography__location">
-                <p>Web Developer <span>based in</span> Colombia</p>
+                <p>{{ ubicacion.work }} <span>{{ ubicacion.ubicado }}</span> Colombia</p>
             </div>
 
             <div class="photography__button">
-                <a class="button__btn" href="../../../assets/CV_JuanVillacob.pdf" download="CV_JuanVillacob.pdf">Download CV <i class="fa-solid fa-download"></i></a>
+                <a class="button__btn" href="../../../assets/CV_JuanVillacob.pdf" download="CV_JuanVillacob.pdf">{{ ubicacion.download }} <i class="fa-solid fa-download"></i></a>
             </div>
         </div>
 
@@ -34,12 +34,7 @@
         <div class="info__text">
             <!-- personal -->
             <div class="text__personal">
-                <p>Born in 1998 and residing in the vibrant city of Medellín, Colombia, I am Juan Camilo, an explorer of
-                    worlds both real and imaginary. An Engineer and web developer, I find inspiration in science fiction
-                    and am always eager to discover new things. This creativity is reflected in my work, where I seek
-                    innovation and excellence in every project. Guided by a philosophy of constant learning and
-                    continuous improvement, I am firmly committed to contributing to meaningful projects and leaving a
-                    positive mark on the industry and those around me.</p>
+                <p>{{ description.desp }}</p>
             </div>
 
             <!-- contacto -->

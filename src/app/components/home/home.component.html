@@ -3,18 +3,18 @@
     <div class="home-container__text">
         <!-- Nombre -->
         <h1 class="text__my-name">
-            MY NAME 
+            {{ nombre.ini }}
             <br>
-            IS JUAN
+            {{ nombre.is }} JUAN
             <span class="my-name__lastname">VILLACOB...</span>
         </h1>
 
         <!-- Ubicacion -->
-        <p class="text__based"> <span>Web Developer</span> based in <span>Colombia</span></p>
+        <p class="text__based"> <span>{{ ubicacion.work }}</span> {{ ubicacion.ubicado }} <span>Colombia</span></p>
 
         <!-- Botón -->
         <div class="text__button">
-            <button class="button__with-me" (click)="scrollToSection()">Work With Me</button>
+            <button class="button__with-me" (click)="scrollToSection()">{{ boton.text }}</button>
         </div>
 
         <!-- Barra de información -->
