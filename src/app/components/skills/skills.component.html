@@ -1,17 +1,17 @@
 <div class="skills-container">
     <!-- Subtitulo -->
     <div class="skills-container__subtitle">
-        <h6>My Service</h6>
+        <h6>{{ inicio.subtitle }}</h6>
     </div>
 
     <!-- Titulo -->
     <div class="skills-container__title">
-        <h2>MY SKILLS</h2>
+        <h2>{{ inicio.title }}</h2>
     </div>
 
     <!-- Skills -->
     <div class="skills-container__skills">
-        <div class="skills__skill" *ngFor="let exp of experiences; index as i">
+        <div class="skills__skill" *ngFor="let exp of experience; index as i">
             <div class="skill__header" (click)="showExp(i)">
                 <div class="header__title" [ngClass]="{'-showed': exp.showed}"><span> {{ exp.name }} </span></div>
                 <div class="header__icon" [ngClass]="{'-showed': exp.showed}"><i class="fa-solid fa-arrow-down"></i></div>
