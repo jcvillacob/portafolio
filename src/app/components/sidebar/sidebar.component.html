@@ -1,54 +1,62 @@
 <div class="sidebar-container" [ngClass]="{'menu-activated': menuActivate}">
-    <!-- Logo -->
-    <div class="sidebar-container__logo">
-        <a href="" class="logo__link">
-            <img [src]="logo" alt="" class="link__image">
-        </a>
-    </div>
+  <!-- Logo -->
+  <div class="sidebar-container__logo">
+    <a href="" class="logo__link">
+      <img [src]="logo" alt="" class="link__image">
+    </a>
+  </div>
 
-    <!-- Menu -->
-    <ul class="side-container__main">
-        <li class="main__elemento" *ngFor="let item of items">
-            <div class="elemento__link" (click)="scrollToSection(item.id)">
-                {{ item.name }}
-            </div>
-        </li>
-    </ul>
+  <!-- Menu -->
+  <ul class="side-container__main">
+    <li class="main__elemento" *ngFor="let item of items">
+      <div class="elemento__link" (click)="scrollToSection(item.id)">
+        {{ item.name }}
+      </div>
+    </li>
+  </ul>
 
-    <!-- Temas -->
-    <div class="side-container__themes">
-        <h6>Themes:</h6>
-        <div class="themes__theme professional" (click)="changeTheme('professional')"></div>
-        <div class="themes__theme warm" (click)="changeTheme('warm')"></div>
-        <div class="themes__theme fresh" (click)="changeTheme('fresh')"></div>
-        <div class="themes__theme dark" (click)="changeTheme('dark')"></div>
-    </div>
+  <!-- Temas -->
+  <div class="side-container__themes">
+    <h6>Themes:</h6>
+    <div class="themes__theme professional" (click)="changeTheme('professional')"></div>
+    <div class="themes__theme warm" (click)="changeTheme('warm')"></div>
+    <div class="themes__theme fresh" (click)="changeTheme('fresh')"></div>
+    <div class="themes__theme dark" (click)="changeTheme('dark')"></div>
+  </div>
 
-    <!-- Redes Sociales -->
-    <ul class="side-container__redes">
-        <li class="redes__red">
-            <a class="red__link"  href="https://www.linkedin.com/in/juancamilovillacob" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </li>
-        <li class="redes__red">
-            <a href="#" class="red__link">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-        </li>
-        <li class="redes__red">
-            <a href="#" class="red__link">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-        </li>
-        <li class="redes__red">
-            <a href="#" class="red__link">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-        </li>
-    </ul>
+
+  <!-- Lenguajes -->
+  <div class="side-container__languages">
+    <h6>Languages:</h6>
+    <div class="lang_lang" [ngClass]="{'lang_seleccionado': language === 1}" (click)="changeLanguage(0)">Eng</div>
+    <div class="lang_lang" [ngClass]="{'lang_seleccionado': language === 0}" (click)="changeLanguage(1)">Esp</div>
+  </div>
+
+  <!-- Redes Sociales -->
+  <ul class="side-container__redes">
+    <li class="redes__red">
+      <a class="red__link" href="https://www.linkedin.com/in/juancamilovillacob" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li class="redes__red">
+      <a href="#" class="red__link">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </li>
+    <li class="redes__red">
+      <a href="#" class="red__link">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </li>
+    <li class="redes__red">
+      <a href="#" class="red__link">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 
 <div class="sidebar-bars" (click)="activarMenu()">
-    <i class="fa-solid fa-bars-staggered"></i>
+  <i class="fa-solid fa-bars-staggered"></i>
 </div>

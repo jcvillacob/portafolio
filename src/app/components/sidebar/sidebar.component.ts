@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ScrollService } from 'src/app/services/scroll.service';
 import { ThemeService } from 'src/app/services/theme.service';
 
@@ -11,6 +12,7 @@ type ThemeName = 'dark' | 'warm' | 'professional' | 'fresh';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  language!: number;
   logo = 'assets/jv_navbar.svg';
   menuActivate: boolean = false;
   items: any[] = [
@@ -63,9 +65,13 @@ export class SidebarComponent {
       '--px-dark':'#e0e0e0'
     }
   };
-  
 
-  constructor(private scrollService: ScrollService, private themeService: ThemeService) {}
+
+  constructor(private scrollService: ScrollService, private themeService: ThemeService) {
+    this.themeService.language$.subscribe(lang => {
+      this.language = lang
+    });
+  }
 
   scrollToSection(sectionId: string): void {
     this.scrollService.scrollToSection(sectionId);
@@ -82,5 +88,9 @@ export class SidebarComponent {
     } else {
       this.logo = 'assets/jv_navbar.svg';
     }
-  }  
+  }
+
+  changeLanguage(lang: number) {
+    this.themeService.toggleLanguage(lang);
+  }
 }

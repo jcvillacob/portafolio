@@ -115,7 +115,7 @@
 
 
 /* TEMAS */
-.side-container__themes {
+.side-container__themes, .side-container__languages {
     width: 100%;
     margin-top: 85px;
     padding: 0 20px;
@@ -125,7 +125,7 @@
     gap: 8px;
 }
 
-.side-container__themes h6 {
+.side-container__themes h6, .side-container__languages h6 {
     font-size: 18px;
     font-weight: 500;
     color: var(--px-text);
@@ -154,9 +154,29 @@
     background: linear-gradient(90deg,#FF5733 0%,#C70039 100%),var(--px-white);
 }
 
-.themes__theme:hover {
+.themes__theme:hover, .lang_lang:hover {
     cursor: pointer;
 }
+
+
+/* LENGUAJES */
+.side-container__languages {
+  margin-top: 15px;
+}
+
+.lang_lang {
+  padding: 5px 15px;
+  background-color: var(--px-text);
+  border-radius: 10px;
+  color: var(--px-theme)
+}
+
+.lang_seleccionado {
+  background-color: var(--px-dark);
+  border-radius: 10px;
+  color: var(--px-theme-2)
+}
+
 
 /* MEDIA */
 @media screen and (max-width: 1200px) {
