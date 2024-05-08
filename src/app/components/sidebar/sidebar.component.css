@@ -188,14 +188,24 @@
         display: block;
     }
 
-    .sidebar-container.menu-activated {
-        left: 0;
+    .side-container__main {
+      position: relative;
     }
+
+    /* .sidebar-container.menu-activated {
+        left: 0;
+    } */
 
     .logo__link {
         position: fixed;
         top: 50px;
         left: 30px;
+    }
+
+    .main__elemento, .side-container__themes, .side-container__languages {
+      position: relative;
+      opacity: 0;
+      left: -40px;
     }
 
 }
