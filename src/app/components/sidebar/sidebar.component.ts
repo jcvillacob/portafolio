@@ -26,7 +26,7 @@ export class SidebarComponent {
     ],
     [
       {name: 'HOME', id: 'home'},
-      {name: 'SOBRE ME', id: 'about'},
+      {name: 'SOBRE MI', id: 'about'},
       {name: 'EXPERIENCIA', id: 'experience'},
       {name: 'HABILIDADES', id: 'skills'},
       {name: 'PORTAFOLIO', id: 'portfolio'},
